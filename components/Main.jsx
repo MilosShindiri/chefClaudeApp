@@ -6,10 +6,8 @@ export default function Main() {
   const ingredientsListItems = ingredients.map((ingredient) => (
     <li key={ingredient}>{ingredient}</li>
   ));
-  function handleSubmit(event) {
-    event.preventDefault();
-    console.log("Form submitted!");
-    const formData = new FormData(event.currentTarget);
+
+  function handleSubmit(formData) {
     const newIngredient = formData.get("ingredient");
     //ingredients.push(newIngredient);
     setIngredients((preIngredient) =>
@@ -20,7 +18,7 @@ export default function Main() {
   }
   return (
     <main>
-      <form className="add-ingredient-form" onSubmit={handleSubmit}>
+      <form className="add-ingredient-form" action={handleSubmit}>
         <input
           type="text"
           placeholder="e.g. oregano"
