@@ -1,5 +1,7 @@
+import React from "react";
+
 export default function Main() {
-  const ingredients = ["Chicken", "Oregano", "Tomatoes"];
+  const [ingredients, setIngredients] = React.useState([]);
 
   const ingredientsListItems = ingredients.map((ingredient) => (
     <li key={ingredient}>{ingredient}</li>
@@ -9,8 +11,12 @@ export default function Main() {
     console.log("Form submitted!");
     const formData = new FormData(event.currentTarget);
     const newIngredient = formData.get("ingredient");
-    ingredients.push(newIngredient);
-    console.log(ingredients);
+    //ingredients.push(newIngredient);
+    setIngredients((preIngredient) =>
+      !preIngredient.includes(newIngredient)
+        ? [...preIngredient, newIngredient]
+        : preIngredient
+    );
   }
   return (
     <main>
@@ -23,7 +29,7 @@ export default function Main() {
         />
         <button>Add ingredient</button>
       </form>
-      <ul>{ingredientsListItems}</ul>
+      <ul className="listOfIngredients">{ingredientsListItems}</ul>
     </main>
   );
 }

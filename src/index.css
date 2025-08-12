@@ -55,3 +55,10 @@ main {
   content: "+";
   margin-right: 5px;
 }
+
+.listOfIngredients {
+  padding-top: 20px;
+  padding-left: 200px;
+  min-width: 150px;
+  max-width: 400px;
+}
