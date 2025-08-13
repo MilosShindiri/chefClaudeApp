@@ -23,7 +23,7 @@ export default function Main() {
     );
   }
 
-  function handleGetRecepie() {
+  function toggleRecipeShown() {
     setRecipeShown(true);
   }
 
@@ -51,7 +51,7 @@ export default function Main() {
                 <h3>Ready for a recipe?</h3>
                 <p>Generate a recipe from your list of ingredients.</p>
               </div>
-              <button onClick={handleGetRecepie}>Get a recipe</button>
+              <button onClick={toggleRecipeShown}>Get a recipe</button>
             </div>
           )}
         </section>
