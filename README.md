@@ -40,6 +40,7 @@ Chef Claude is a simple and interactive web application that helps you discover 
    npm run dev
 
 ##Project Structure
+```
 chefClaudeApp/
 ├── components/         # React components (AI logic, UI, etc.)
 ├── images/             # App images and icons
@@ -49,6 +50,7 @@ chefClaudeApp/
 ├── [package.json](http://_vscodecontentref_/0)        # Project metadata and scripts
 ├── [vite.config.js](http://_vscodecontentref_/1)      # Vite configuration
 └── [README.md](http://_vscodecontentref_/2)           # This file
+```
 
 ##Technologies Used
 -React
