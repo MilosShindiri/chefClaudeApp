@@ -9,8 +9,6 @@ Chef Claude is a simple and interactive web application that helps you discover 
 - **Markdown Recipe Display:** Recipes are rendered in a readable, well-formatted style.
 - **Responsive UI:** Clean and modern interface built with React and Vite.
 
-## Demo
-
 ![Chef Claude Screenshot](images/chef-claude-icon.png)
 
 ## Getting Started
@@ -51,3 +49,20 @@ chefClaudeApp/
 ├── [package.json](http://_vscodecontentref_/0)        # Project metadata and scripts
 ├── [vite.config.js](http://_vscodecontentref_/1)      # Vite configuration
 └── [README.md](http://_vscodecontentref_/2)           # This file
+
+##Technologies Used
+-React
+-Vite
+-Hugging Face Inference API
+-react-markdown
+
+##Usage
+-Enter ingredients you have at home.
+-Click "Get a recipe" when you have at least 4 ingredients.
+-Chef Claude will suggest a recipe you can try!
+
+##Contributing
+-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+
+Made with ❤️ by [Milos Petrovic]
